@@ -1,0 +1,121 @@
+.screen-container {
+    grid-template-areas: 
+            "about about ."
+            ". oval ."
+            ". . us";
+    grid-template-columns: 30% auto auto;
+    grid-template-rows: 15% auto auto;
+}
+
+.about-title {
+    grid-area: about;
+    width: 350px;
+    color: #7B5E88;
+    font-family: Georgia;
+    font-size: 80px;
+    line-height: 103px;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.oval-container {
+    grid-area: oval;
+}
+
+.outer-oval {
+	box-sizing: border-box;
+	height: 550px;
+	width: 550px;
+	border: 3px solid #FFFFFF;
+    border-radius: 600px;
+    position: fixed;
+}
+
+.inner-oval {
+	box-sizing: border-box;
+    margin: auto;
+    margin-top: 12px;
+	height: 520px;
+	width: 520px;
+	border: 3px solid #FFFFFF;
+    border-radius: 600px;
+}
+
+.about-paragraph {
+    height: auto;
+    width: 350px;
+    color: #7B5E88;
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.us-container {
+    grid-area: us;
+    width: 100px;
+    height: 400px;
+}
+
+.us-image {
+    height: 600px;
+    width: 563px;
+}
+
+@media (max-width: 500px) {
+    .screen-container{
+        grid-template-areas:
+            "about"
+            "oval"
+            "us";
+    }
+    
+    .about-title {
+        font-size: 60px;
+        padding-top: 50px;
+    }
+    
+    .oval-container {
+        padding-top: 50px;
+    }
+    
+    .outer-oval {
+        height: 380px;
+        width: 380px;
+        border-radius: 0;
+    }
+    
+    .inner-oval {
+        margin-top: 7px;
+        height: 360px;
+        width: 360px;
+        border-radius: 0;
+    }
+    
+    .about-paragraph {
+        height: 250px;
+        width: 300px;
+        color: #7B5E88;
+        font-family: Georgia;
+        font-size: 12px;
+        line-height: 26px;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .us-container {
+        grid-area: us;
+        width: 100px;
+        height: 400px;
+        margin-top: 320%;
+        margin-left: 50px;
+    }
+
+    .us-image {
+        height: 300px;
+        width: 283px;
+    }
+}

@@ -1,0 +1,272 @@
+html {
+    background-color: #DDDEFA;
+}
+
+a, li {
+    text-decoration: none;
+}
+
+.screen-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+            "name name ."
+            ". photo ."
+            "events . sociologist";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% auto auto;
+}
+
+/*navigation*/
+.navigation {
+    width: 450px;
+    position: fixed;
+    right: 0;
+    padding-right: 30px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home {
+	height: 32px;
+	width: 77px;
+	color: #7B5E88;
+	font-family: Georgia;
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.about {
+	height: 32px;
+	width: 76px;
+	color: #7B5E88;
+	font-family: Georgia;
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.research {
+	height: 32px;
+	width: 114px;
+	color: #7B5E88;
+	font-family: Georgia;
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.contact {
+	height: 32px;
+	width: 96px;
+	color: #7B5E88;
+	font-family: Georgia;
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.cv {
+	height: 32px;
+	width: 50px;
+	color: #7B5E88;
+	font-family: Georgia;
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.line {
+	box-sizing: border-box;
+	height: 35px;
+	width: 1px;
+	border: 1px solid #FFFFFF;
+}
+
+/*Body*/
+
+.anna-church {
+    grid-area: name;
+	width: 600px;
+	color: #7B5E88;
+	font-family: Georgia;
+	font-size: 100px;
+	line-height: 171px;
+	text-align: center;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.photo-container {
+    grid-area: photo;
+    padding-top: 43px;
+}
+
+.circle-photo {
+	height: 410px;
+	width: auto;
+}
+
+.sociologist {
+    grid-area: sociologist;
+    height: 82px;
+    width: 345px;
+    color: #7B5E88;
+    font-family: Georgia;
+    font-size: 58px;
+    line-height: 82px;
+    text-align: center;
+}
+
+.events-title {
+    font-size: 30px;
+}
+
+.events {
+    grid-area: events;
+    color: #7B5E88;
+    font-family: Georgia;
+    margin-left: 5%;
+    width: 700px;
+}
+
+.event-content {
+    font-size: 18px;
+}
+
+@media (max-width: 1100px) {
+    .screen-container {
+        grid-template-rows: 20% auto 30%;
+    }
+    
+    .anna-church {
+        font-size: 70px;
+        width: 410px;
+    }
+    
+    .circle-photo {
+        height: 320px;
+        width: auto;
+    }
+    
+    .photo-container {
+        padding-top: 23px;
+    }
+    
+    .sociologist {
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .navigation {
+        width: 500px;
+        margin-right: 20px;
+    }
+
+    .home {
+        height: 32px;
+        width: 60px;
+        color: #7B5E88;
+        font-family: Georgia;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .about {
+        height: 32px;
+        width: 60px;
+        color: #7B5E88;
+        font-family: Georgia;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .research {
+        height: 32px;
+        width: 90px;
+        color: #7B5E88;
+        font-family: Georgia;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .contact {
+        height: 32px;
+        width: 80px;
+        color: #7B5E88;
+        font-family: Georgia;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .cv {
+        height: 32px;
+        width: 50px;
+        color: #7B5E88;
+        font-family: Georgia;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .line {
+        box-sizing: border-box;
+        height: 35px;
+        width: 1px;
+        border: 1px solid #FFFFFF;
+    }
+    
+    .screen-container {
+        grid-template-areas: 
+                "name"
+                "photo"
+                "sociologist"
+                "events";
+        grid-template-rows: 20% 40% auto auto;
+    }
+    
+    .anna-church {
+        font-size: 50px;
+        width: 300px;
+        padding-left: 29%;
+    }
+    
+    .circle-photo {
+        height: 300px;
+        width: auto;
+        padding-left: 29%;
+    }
+    
+    .sociologist {
+        font-size: 36px;
+        padding-left: 20%;
+        padding-top: 30px;
+    }
+    
+    .navigation {
+        width: auto;
+        padding-right: 3%;
+    }
+    
+    .events {
+        margin: auto;
+        margin-top: 40%;
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+    }
+    
+    .events-title {
+        text-align: center;
+        font-size: 24px;
+    }
+}
